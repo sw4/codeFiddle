@@ -30,3 +30,16 @@ And the relevent CodeMirror JS files for the seperate editors being used:
 
 `<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>`
 
+
+Usage:
+----
+
+Once the relevant libraries have been included in your page, add (as many) elements with the class `codeFiddle`
+
+To instantiate the codeFiddles, simply call `codeFiddle.init();` e.g:
+
+```
+$(document).ready(function () {
+   codeFiddle.init();
+});
+```
