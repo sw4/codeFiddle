@@ -46,7 +46,7 @@ $(document).ready(function () {
 
                     "</div>"+
 
-                    "<button class='cf-run'>Output (Click Here or Ctrl+Enter Keypress on Code Input to Update)</button>"+
+                    "<button class='cf-run'>Output (Click or Ctrl+Enter to Update)</button>"+
 
                 "</div>",                 
 
