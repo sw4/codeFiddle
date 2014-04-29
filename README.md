@@ -3,6 +3,8 @@ codeFiddle
 
 Embeddable jsFiddle-like HTML/CSS/JS code fiddler
 
+Live demo can be viewed here: http://sw4.github.io/codeFiddle
+
 Allows you to embed jsFiddle-like code editing functionality into your web pages, simply include the JS and CSS.
 
 Requirements:
