@@ -43,3 +43,35 @@ $(document).ready(function () {
    codeFiddle.init();
 });
 ```
+
+
+Sample HTML Page
+--------
+
+```
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>codeFiddle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <!-- Codemirror CSS -->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.1.0/codemirror.css" rel="stylesheet">   
+        <!-- codeFiddle CSS -->
+        <link href="http://rawgit.com/sw4/codeFiddle/master/codeFiddle.css" rel="stylesheet">      
+    </head>
+    <body>
+        <div class='codeFiddle'></div>    
+        <!-- Codemirror.js -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.1.0/codemirror.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.1.0/package/mode/xml/xml.js"></script>        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.1.0/package/mode/htmlmixed/htmlmixed.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.1.0/package/mode/css/css.js"></script>        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.1.0/package/mode/javascript/javascript.js"></script>
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>        
+        <!-- codeFiddle JS -->
+        <script src="http://rawgit.com/sw4/codeFiddle/master/codeFiddle.js"></script>
+    </body>
+</html>
+```
