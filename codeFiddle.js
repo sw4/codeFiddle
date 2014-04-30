@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var codeFiddle={
+    return codeFiddle={
         run:function(cfEl, cssEditor, htmlEditor, jsEditor){                
             var cfView = cfEl.find('.cf-view')[0];          
             cfView = (cfView.contentWindow) ? cfView.contentWindow : (cfView.contentDocument.document) ? cfView.contentDocument.document : cfView.contentDocument;
