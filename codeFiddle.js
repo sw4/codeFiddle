@@ -42,9 +42,9 @@ $(document).ready(function () {
             $('.codeFiddle').each(function(){                
                 var cfEl=$(this);
                 cfEl.html(scope.template);                                                        
-                var cssEditor=scope.initCodeMirror(cfEl.find('.cf-css textarea'), options && options.css && options.css.CodeMirror),
-                    htmlEditor=scope.initCodeMirror(cfEl.find('.cf-html textarea', options && options.html && options.html.CodeMirror)),
-                    jsEditor=scope.initCodeMirror(cfEl.find('.cf-js textarea', options && options.js && options.js.CodeMirror));
+                var cssEditor=scope.initCodeMirror(cfEl.find('.cf-css textarea'), options && options.cssEditor),
+                    htmlEditor=scope.initCodeMirror(cfEl.find('.cf-html textarea', options && options.htmlEditor)),
+                    jsEditor=scope.initCodeMirror(cfEl.find('.cf-js textarea', options && options.js && options.jsEditor));
                 cfEl.find('.cf-run').on('click', function(){scope.run(cfEl, cssEditor, htmlEditor, jsEditor, options);});
                 cfEl.find('textarea').on('keydown keyup', function(e){                    
                     if(e.which===17 && e.type==="keydown"){
