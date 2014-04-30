@@ -47,6 +47,35 @@ $(document).ready(function () {
 ```
 
 
+Options
+-----
+
+When instantiating codeFiddle, you can pass an options object with the following values:
+
+```
+stylesheets:[] // array of stylesheets to be applied to fiddle output
+scripts:[] // array of scripts to be applied to fiddle output 
+htmlEditor:{} // object of CodeMirror options for HTML editor*
+cssEditor:{} // object of CodeMirror options for CSS editor*
+jsEditor:{} // object of CodeMirror options for JS editor*
+```
+<sup>CodeMirror options can be found here: http://codemirror.net/doc/manual.html#config</sup>
+
+**Sample Options**
+
+The below will instantiate codeFiddle with the Meyer CSS reset and jQuery 2.1.0 applied:
+
+```
+$(document).ready(function () {
+   codeFiddle.init({
+       stylesheets:['http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'],
+       scripts:['http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js']
+   });        
+});  
+```
+
+
+
 Sample HTML Page
 --------
 
@@ -90,34 +119,6 @@ Sample HTML Page
     </body>
 </html>
 ```
-
-Options
------
-
-When instantiating codeFiddle, you can pass an options object with the following values:
-
-```
-stylesheets:[] // array of stylesheets to be applied to fiddle output
-scripts:[] // array of scripts to be applied to fiddle output 
-htmlEditor:{} // object of CodeMirror options for HTML editor*
-cssEditor:{} // object of CodeMirror options for CSS editor*
-jsEditor:{} // object of CodeMirror options for JS editor*
-```
-<sup>CodeMirror options can be found here: http://codemirror.net/doc/manual.html#config</sup>
-
-**Sample Options**
-
-The below will instantiate codeFiddle with the Meyer CSS reset and jQuery 2.1.0 applied:
-
-```
-$(document).ready(function () {
-   codeFiddle.init({
-       stylesheets:['http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'],
-       scripts:['http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js']
-   });        
-});  
-```
-
 
 Notes
 ----
