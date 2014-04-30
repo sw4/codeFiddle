@@ -117,3 +117,9 @@ $(document).ready(function () {
    });        
 });  
 ```
+
+
+Notes
+----
+
+By default, codeFiddles will be 99% the height of their parent `.codeFiddle` containers, this is due to there being 3 vertically aligned editors with height of 33% (non integer % sizes have browser-specific nuances).
