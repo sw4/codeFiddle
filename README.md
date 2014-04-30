@@ -80,7 +80,11 @@ Sample HTML Page
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>        
         <!-- codeFiddle JS -->
         <script src="http://rawgit.com/sw4/codeFiddle/master/codeFiddle.js"></script>
-        <script>codeFiddle.init();</script>
+        <script>
+           $(document).ready(function () {
+               codeFiddle.init();        
+           });        
+        </script>
     </body>
 </html>
 ```
