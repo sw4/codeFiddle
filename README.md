@@ -1,6 +1,8 @@
 codeFiddle
 ==========
 
+**Licensed under [cc by-sa 3.0](http://creativecommons.org/licenses/by-sa/3.0/) with attribution required**
+
 Embeddable jsFiddle-like HTML/CSS/JS code fiddler
 
 Live demo can be viewed here: http://sw4.github.io/codeFiddle
