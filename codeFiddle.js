@@ -21,7 +21,7 @@ $(document).ready(function () {
         },
         initCodeMirror:function(el, options){        
             options=$.extend({
-                
+                lineNumbers: true,
                 mode: el.parent().hasClass('cf-html') ? "htmlmixed" : (el.parent().hasClass('cf-css') ? "css": "javascript"),
                 viewportMargin:Infinity
             }, options);
