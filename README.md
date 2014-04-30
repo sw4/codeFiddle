@@ -97,11 +97,11 @@ When instantiating codeFiddle, you can pass an options object with the following
 ```
 stylesheets:[] // array of stylesheets to be applied to fiddle output
 scripts:[] // array of scripts to be applied to fiddle output 
-html.CodeMirror // object of CodeMirror options for HTML editor*
-css.CodeMirror // object of CodeMirror options for CSS editor*
-js.CodeMirror // object of CodeMirror options for JS editor*
+html.CodeMirror:{} // object of CodeMirror options for HTML editor*
+css.CodeMirror:{} // object of CodeMirror options for CSS editor*
+js.CodeMirror:{} // object of CodeMirror options for JS editor*
 ```
-* CodeMirror options can be found here: http://codemirror.net/doc/manual.html#config
+<sup>CodeMirror options can be found here: http://codemirror.net/doc/manual.html#config</sup>
 
 **Sample Options**
 
