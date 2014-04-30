@@ -19,12 +19,13 @@ $(document).ready(function () {
             cfView.document.write('<!doctype html><html lang="en"><head><meta charset="utf-8">'+stylesheets+'<style>'+cssEditor.getValue()+'</style></head><body>'+htmlEditor.getValue()+scripts+'<scr'+'ipt>'+jsEditor.getValue()+'</scr'+'ipt></body></html>');
             cfView.document.close();
         },
-        initCodeMirror:function(el, options){
-            options=options || {
-                lineNumbers: true,
+        initCodeMirror:function(el, options){        
+            options=$.extend({
+                
                 mode: el.parent().hasClass('cf-html') ? "htmlmixed" : (el.parent().hasClass('cf-css') ? "css": "javascript"),
                 viewportMargin:Infinity
-            };
+            }, options);
+            console.log(options);
             return CodeMirror.fromTextArea(el[0], options);            
         },
         ctrl:false,
@@ -34,15 +35,15 @@ $(document).ready(function () {
                         "<div class='cf-css'><textarea></textarea></div>"+
                         "<div class='cf-js'><textarea></textarea></div>"+ 
                     "</div>"+
-                    "<button class='cf-run'>Output (Click / Ctrl+Enter to Update)</button>",                 
+                    "<button class='cf-run'>Output (Click / Ctrl+Enter to Update)</button>",         
         init:function(options){        
             var scope=this;                
             $('.codeFiddle').each(function(){                
                 var cfEl=$(this);
                 cfEl.html(scope.template);                                                        
                 var cssEditor=scope.initCodeMirror(cfEl.find('.cf-css textarea'), options && options.cssEditor),
-                    htmlEditor=scope.initCodeMirror(cfEl.find('.cf-html textarea', options && options.htmlEditor)),
-                    jsEditor=scope.initCodeMirror(cfEl.find('.cf-js textarea', options && options.js && options.jsEditor));
+                    htmlEditor=scope.initCodeMirror(cfEl.find('.cf-html textarea'), options && options.htmlEditor),
+                    jsEditor=scope.initCodeMirror(cfEl.find('.cf-js textarea'), options && options.jsEditor);
                 cfEl.find('.cf-run').on('click', function(){scope.run(cfEl, cssEditor, htmlEditor, jsEditor, options);});
                 cfEl.find('textarea').on('keydown keyup', function(e){                    
                     if(e.which===17 && e.type==="keydown"){
