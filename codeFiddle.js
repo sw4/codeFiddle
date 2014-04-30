@@ -28,15 +28,13 @@ $(document).ready(function () {
             return CodeMirror.fromTextArea(el[0], options);            
         },
         ctrl:false,
-        template: "<div class='codeFiddle'>"+
-                    "<iframe class='cf-view'></iframe>"+
+        template: "<iframe class='cf-view'></iframe>"+
                     "<div class='cf-editors'>"+
                         "<div class='cf-html'><textarea></textarea></div>"+
                         "<div class='cf-css'><textarea></textarea></div>"+
                         "<div class='cf-js'><textarea></textarea></div>"+ 
                     "</div>"+
-                    "<button class='cf-run'>Output (Click / Ctrl+Enter to Update)</button>"+
-                "</div>",                 
+                    "<button class='cf-run'>Output (Click / Ctrl+Enter to Update)</button>",                 
         init:function(options){        
             var scope=this;                
             $('.codeFiddle').each(function(){                
