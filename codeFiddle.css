@@ -1,4 +1,3 @@
-
 .codeFiddle{
     height:99%;
     font-family:arial;
@@ -30,7 +29,7 @@
 .cf-editors > div:after, .cf-run{
     position:absolute;
     top:0;
-    right:0;
+    right:1px;
     font-size:9px;
     background:#eee;
     border-radius:0 0 0 5px;
