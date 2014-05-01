@@ -14,7 +14,7 @@ Requirements:
 
 **CodeMirror**
 
-The editor relies up CodeMirror (http://codemirror.net/) for its beautiful code formatting, as such (by default) you'll need to include the CodeMirror CSS:
+The editor uses CodeMirror (http://codemirror.net/) for its beautiful code formatting, as such (by default) you'll need to include the CodeMirror CSS:
 
 `<link href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/4.1.0/codemirror.css" rel="stylesheet">`
 
