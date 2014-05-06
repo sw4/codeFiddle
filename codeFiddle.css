@@ -5,7 +5,7 @@ html,body{
     padding:0;
 }
 .codeFiddle{
-    height:99%;
+    height:99.99%;
     font-family:arial;
     overflow:hidden;
     position:relative;
@@ -26,8 +26,8 @@ html,body{
 .cf-editors > div{
     position:relative;
     cursor:text;
-    height:33%;
-      border-top: 1px solid #D9D9D9;
+    height:33.33%;
+    border-top: 1px solid #D9D9D9;
 }
 .cf-editors > textarea{
     height:100%;
