@@ -25,7 +25,6 @@ $(document).ready(function () {
                 mode: el.parent().hasClass('cf-html') ? "htmlmixed" : (el.parent().hasClass('cf-css') ? "css": "javascript"),
                 viewportMargin:Infinity
             }, options);
-            console.log(options);
             return CodeMirror.fromTextArea(el[0], options);            
         },
         ctrl:false,
